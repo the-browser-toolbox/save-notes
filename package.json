@@ -1,0 +1,41 @@
+{
+  "name": "save-notes",
+  "version": "1.0.0",
+  "description": "extension which saves notes while browsing ",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "prettier": "prettier-check src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-browser-toolbox/save-notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-browser-toolbox/save-notes/issues"
+  },
+  "homepage": "https://github.com/the-browser-toolbox/save-notes#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.4",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "prettier-check": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix"
+    ]
+  }
+}

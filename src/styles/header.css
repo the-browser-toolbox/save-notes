@@ -1,0 +1,8 @@
+#H1 {
+  align-self: center;
+  font-family: "Menlo", monospace;
+  font-size: 30px;
+  color: #2c5aaf;
+  text-shadow: 1px 1px 2px #000000;
+  border-bottom: 2px solid rgb(70, 151, 53);
+}

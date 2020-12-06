@@ -1,10 +1,9 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: Feature request
-labels: enhancement
-assignees: ''
-
+name: "\U0001F680 Feature request"
+about: "I have a suggestion (and may want to implement it \U0001F642)!"
+title: "[DATE]: [FEATURE NAME]"
+labels: "i: enhancement, i: needs triage"
+assignees: ""
 ---
 
 ## Feature Request
@@ -25,5 +24,5 @@ Maybe a screenshot or design?
 **Additional context**
 Add any other context or screenshots about the feature request here.
 
->**Please note by far the quickest way to get a new feature is to file a Pull Request after raising the issue.**
->We will consider your request but it may be closed if it's something we're not actively planning to work on.
+> **Please note by far the quickest way to get a new feature is to file a Pull Request after raising the issue.**
+> We will consider your request but it may be closed if it's something we're not actively planning to work on.

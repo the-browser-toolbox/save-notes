@@ -53,3 +53,6 @@ Not obligatory, but suggest a fix/reason for the bug.
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
+
+
+Please use the [Gitter](https://gitter.im/the-browser-toolbox/community) channel to update your bug report.

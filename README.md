@@ -1,7 +1,7 @@
 # save-notes
 
 <p align="center" width="100%">
-    <img width="300" src="https://github.com/the-browser-toolbox/save-notes/blob/main/logo.png"> 
+    <img width="300" src="logo.png"> 
 </p>
 
 An extension to save notes for future reference. The user should be able to input custom notes with headings, as well as select text from the current page he/she is in, right-click on it, and click a Save option to save it.

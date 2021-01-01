@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Save-Notes</title>
-        <script src="../scripts/popup.js"></script>
-        <link rel="stylesheet" href="../styles/popup.css">
-        <link rel="stylesheet" href="../styles/header.css">
-        
-    </head>
-    <body>
-        <h2 id="H1">Hello World!</h2>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save-Notes</title>
+    <script src="../scripts/popup.js"></script>
+    <link rel="stylesheet" href="../styles/popup.css">
+    <link rel="stylesheet" href="../styles/header.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1><img src="../icons/icon48.png" alt="logo" class="logo" />Save-Notes</h1>
+    </div>
+    <div class="text_area">
+      <p>Note area 1 :</p>
+      <div style="display: flex;">
+        <textarea id="t1"></textarea>
+        <input type="button" id="save1" value="Save" />
+        <input type="button" id="show1" value="Show" />
+        <input type="button" id="copy1" value="Copy" />
+      </div>
+      <p>Note area 2 :</p>
+      <div style="display: flex;">
+        <textarea id="t2"></textarea>
+        <input
+          type="button"
+          id="save2"
+          value="Save"
+          style="margin-bottom: 20px;"
+        />
+        <input type="button" id="show2" value="Show" />
+        <input type="button" id="copy2" value="Copy" />
+      </div>
+    </div>
+  </body>
 </html>

@@ -19,6 +19,10 @@
   "background" : {
     "scripts": ["src/scripts/eventPage.js"],
     "persistent": false
-  }
+  },
+  
+  "permissions": [
+    "storage"
+  ]
 
 }

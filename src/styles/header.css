@@ -1,8 +1,130 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap');
+
 #H1 {
   align-self: center;
   font-family: "Menlo", monospace;
   font-size: 30px;
   color: #2c5aaf;
   text-shadow: 1px 1px 2px #000000;
-  border-bottom: 2px solid rgb(70, 151, 53);
+}
+
+/* NAVBAR */
+nav {
+  height: 80px;
+  background-color: transparent;
+  box-shadow: 3px 3px 0px 0px #194197;
+  border-radius: 0 0 5px 5px;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+.logo {
+  width:  70px;
+  height: 70px;
+  margin-top: 0px;
+  position: absolute;
+  top: 12px;
+  left: 10%;
+  border-radius: 50%;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 35px;
+}
+.u-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  margin-right: 65px;
+}
+.list-items {
+  text-decoration: none;
+  position: relative;
+  color: #0d0d6d;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  font-weight: 500;
+}
+.list-items::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #021c72;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.list-items:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s linear;
+}
+label #btn,
+label #cancel {
+  color: #0d0d6d;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  body {
+    text-align: center;
+  }
+  .logo {
+    left: 3%;
+  }
+  .u-list {
+    margin-right: 0;
+  }
+  label #btn {
+    display: block;
+  }
+  .u-list {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    box-shadow: 4px 4px 0px 0px #6d696957;
+    background: var(--ul-bgcolor);
+    backdrop-filter: blur(3px);
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+  .u-list li {
+    display: block;
+    margin: 60px 0;
+    line-height: 30px;
+  }
+  .list-items {
+    color: #7e19d1;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  #check:not(:checked) ~ .u-list {
+    display: none;
+  }
+  #check:checked ~ .u-list {
+    right: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
 }

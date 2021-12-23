@@ -1,4 +1,88 @@
-body {
-  width: 200px;
-  background-image: linear-gradient(#66b3ff, #99ccff);
+* {
+  width: auto;
+  margin:0;
+  box-sizing: border-box;
+  padding:0;
+}
+
+body,html{
+  height: 100%;
+  font-style: 'Segoe UI';
+  font-weight: 400;
+}
+
+#container{
+  min-height: 97%;
+  background-color: azure;
+}
+
+#main{
+  overflow: auto;
+  padding-bottom: 150px;
+}
+
+.footer{
+  background-color: rgb(212, 211, 211);
+  position: relative;
+  height: 150px;
+  margin-top: -150px;
+  padding:40px 0;
+  clear: both;
+}
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.footer .social a{
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid rgb(97, 96, 96);
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover{
+  opacity: 0.9;
+}
+
+.footer ul{
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer ul li a{
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover{
+  opacity: 1;
+}
+
+.footer .copyright{
+  background-color: rgb(212, 211, 211);
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: inherit;
 }

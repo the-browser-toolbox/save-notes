@@ -1,24 +1,24 @@
-const { watch, parallel } = require("gulp");
+const gulp = require('gulp');
+const { src, dest, watch, parallel, series } = require('gulp');
+const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
 
-function build(cb){
-    //scripts to build goes here
-
-
-
-
-    console.log("build completed");
-    cb();
-}
-function watching(cb){
-    watch("src/scripts/*.js",function(rb){
-        //The sccripts to go when watched
-
-
-
-        console.log("watched");
-        rb();
-    });
-    cb();
+async function minifyingjs(){
+    gulp.src('src/scripts/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dest/scripts'))
 }
 
-exports.default = parallel(build, watching);
+async function minifyingimg(){
+    gulp.src('src/icons/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dest/icons'))
+}
+
+function watching(){
+    watch('src/scripts/*.js', series(minifyingjs));
+    watch('src/icons/*', series(minifyingimg));
+}
+
+
+exports.default = parallel(minifyingjs,minifyingimg, watching)

@@ -12,10 +12,11 @@
 /* NAVBAR */
 nav {
   height: 80px;
-  background-color: transparent;
-  box-shadow: 3px 3px 0px 0px #194197;
+  background-color: hsl(0, 0%, 40%);
+  box-shadow: 3px 3px 0px 0px hsl(0, 1%, 85%);
   border-radius: 0 0 5px 5px;
   font-family: 'Baloo Paaji 2', cursive;
+  font-weight: 500;
 }
 .logo {
   width:  70px;
@@ -41,11 +42,14 @@ nav ul li {
 .list-items {
   text-decoration: none;
   position: relative;
-  color: #0d0d6d;
+  color: #fff;
   font-size: 21px;
   text-transform: uppercase;
   padding: 5px 0;
   font-weight: 500;
+}
+.list-items:hover{
+  color: #0d0d6d;
 }
 .list-items::before {
   position: absolute;

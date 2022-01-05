@@ -19,6 +19,8 @@
   "background" : {
     "scripts": ["scripts/eventPage.js"],
     "persistent": false
-  }
+  },
 
+
+  "content_security_policy" : "script-src 'self' https://kit.fontawesome.com/341052e332.js; object-src 'self'"
 }
